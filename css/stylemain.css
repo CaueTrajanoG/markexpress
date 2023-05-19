@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;    
+}
+.logotype{
+    background-color: rgb(245, 201, 55);
+    display: flex;
+    justify-content: center;
+}
+.menu-header{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    padding: .5rem .5rem 2rem;
+    border-bottom: rgb(150, 150, 150) solid;
+
+}
+.banner{
+    background-image: url(../img/supermarket-cart_53876-65615.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 700px;
+
+}
