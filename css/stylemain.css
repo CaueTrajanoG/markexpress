@@ -3,9 +3,10 @@ body{
     padding: 0;    
 }
 .logotype{
-    background-color: rgb(245, 201, 55);
+    color: #FFBD11;
     display: flex;
     justify-content: center;
+    border-bottom: rgb(150, 150, 150) solid;
 }
 .menu-header{
     list-style: none;
