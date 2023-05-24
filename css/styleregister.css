@@ -9,14 +9,43 @@ body{
     background-color: #78DF5A;
 }
 header{
-    display: flex;
-    justify-content: flex-end;
-    background-color: darkgreen;
+    background-color: #2F5E2F;
     height: 150px;
     color: white;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
-
 }
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.top-left-btn-back{
+    margin-top: 50px;
+}
+.top-left-btn-back > a>input{
+    margin-left: 100px;
+    background-color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 20px;
+    box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
+}
+.top-left-btn-back > a>input:hover   {
+        cursor: pointer;
+        background-color: #78DF5A;
+    }
+
+.top-right-text > h1{
+    padding-top: 35px;
+    font-size: 96px;
+    margin-right: 85px;
+} 
+
 main{
     display: flex;
     justify-content: center;
@@ -26,7 +55,7 @@ section{
     justify-content: space-around;
     flex-direction: row;
     align-items: stretch;
-    background-color: darkgreen;
+    background-color: #2F5E2F;
     margin-top: 170px;
     border-radius: 30px;
     width: 1280px;
@@ -75,7 +104,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 .right-card-btn > input{
-    background-color: #78DF5A;
+    background-color: #fff;
     width: 150px;
     height: 50px;
     border-radius: 20px;
@@ -88,5 +117,5 @@ input::-webkit-inner-spin-button {
 }
 .right-card-btn > input:hover{
     cursor: pointer;
-    color: white;
+    background-color: #78DF5A;
 }
