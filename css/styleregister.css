@@ -10,7 +10,7 @@ body{
 }
 header{
     background-color: #2F5E2F;
-    height: 90px;
+    height: 5.5rem;
     color: white;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
 }
@@ -21,13 +21,13 @@ header{
 .top-left-btn-back > a>input{
     margin-left: 100px;
     background-color: #2F5E2F;
-    width: 150px;
-    height: 50px;
+    width: 9rem;
+    height: 3rem;
     border-radius: 20px;
     border: solid #78DF5A;
     font-weight: 600;
-    font-size: 1.5em;
-    margin-top: 20px;
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
     color: rgb(255, 255, 255);
     font-weight: 700;
@@ -39,9 +39,9 @@ header{
 }
 
 .top-right-text > h1{
-    padding-top: 25px;
-    font-size: 40px;
-    margin-right: 85px;
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    margin-right: 5rem;
 } 
 
 main{
@@ -52,12 +52,11 @@ section{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-   
     background-color: #2F5E2F;
-    margin-top: 70px;
-    border-radius: 30px;
-    width: 1280px;
-    height: 600px;
+    margin-top: 4.3rem;
+    border-radius: 1.8rem;
+    width: 80rem;
+    height: 37.5rem;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
 }
 .left-card{
@@ -77,14 +76,14 @@ section{
 .right-card-top-text{
     color: white;
     font-weight: 600;
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
 }
 .right-card-info > input{
-    width: 350px;
-    height: 40px;
+    width: 21.9rem;
+    height: 2.5rem;
     background: #D9D9D9;
-    margin: .8em;
+    margin: .8rem;
     border-radius: 20px;
     border: none;
     outline: none;    
@@ -103,13 +102,13 @@ input::-webkit-inner-spin-button {
 }
 .right-card-btn >a> input{
     background-color: #fff;
-    width: 150px;
-    height: 50px;
+    width: 9.3rem;
+    height: 3.1rem;
     border-radius: 20px;
     border: none;
     font-weight: 600;
-    font-size: 1em;
-    margin-top: 20px;
+    font-size: 1rem;
+    margin-top: 1.25rem;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
     color: #1d4b0f;
 
