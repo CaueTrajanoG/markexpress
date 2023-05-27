@@ -92,14 +92,9 @@ section{
     font-size: 1.4rem;
 }
 input::placeholder{
-    
     text-indent: 1em;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
+
 .right-card-btn >a> input{
     background-color: #fff;
     width: 9.3rem;
@@ -117,4 +112,88 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
     background-color: #78DF5A;
     color: #133309;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 4rem;
+    }
+    .top-left-btn-back > a > input {
+        margin-left: 50px;
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        margin-top: 0.75rem;
+    }
+    .top-right-text > h1 {
+        font-size: 1.8rem;
+        margin-right: 3rem;
+    }
+    section {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    .left-card{
+        display: none;
+    }
+    .right-card {
+    width: 100%;
+    }
+    .right-card-top-text{
+        margin-top: 1.5rem;
+    }
+    .right-card-btn{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .right-card-info > input {
+        width: 90%;
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .right-card-btn > a > input {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-top: 0.75rem;
+    }
+}  
+
+@media (max-width: 480px) {
+    .top-left-btn-back{
+        display: none;
+    }
+    .top-menu{
+        align-items: center;
+        justify-content: center;
+    }
+    .top-right-text > h1 {
+        font-size: 2rem;
+    }
+    section {
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+    .left-card{
+        display: none;
+    }
+    .right-card-top-text{
+        margin-top: 1.5rem;
+    }
+    .right-card-info > input {
+        width: 95%;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+    .right-card-btn > a > input {
+        width: 7rem;
+        height: 2.2rem;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    } 
+    .right-card-btn{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
