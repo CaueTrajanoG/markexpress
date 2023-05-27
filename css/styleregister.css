@@ -10,39 +10,37 @@ body{
 }
 header{
     background-color: #2F5E2F;
-    height: 150px;
+    height: 90px;
     color: white;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
 }
 .top-menu{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.top-left-btn-back{
-    margin-top: 50px;
+    justify-content: space-between; 
 }
 .top-left-btn-back > a>input{
     margin-left: 100px;
-    background-color: #fff;
+    background-color: #2F5E2F;
     width: 150px;
     height: 50px;
     border-radius: 20px;
-    border: none;
+    border: solid #78DF5A;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.5em;
     margin-top: 20px;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
 }
 .top-left-btn-back > a>input:hover   {
         cursor: pointer;
-        background-color: #78DF5A;
-    }
+        background-color: #1d4b0f;
+        border:solid #08fc3d
+}
 
 .top-right-text > h1{
-    padding-top: 35px;
-    font-size: 96px;
+    padding-top: 25px;
+    font-size: 40px;
     margin-right: 85px;
 } 
 
@@ -54,9 +52,9 @@ section{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    align-items: stretch;
+   
     background-color: #2F5E2F;
-    margin-top: 170px;
+    margin-top: 70px;
     border-radius: 30px;
     width: 1280px;
     height: 600px;
@@ -84,26 +82,26 @@ section{
 }
 .right-card-info > input{
     width: 350px;
-    height: 35px;
+    height: 40px;
     background: #D9D9D9;
-    margin: 1.3em;
+    margin: .8em;
     border-radius: 20px;
     border: none;
-    outline: none;
-    text-indent: 2em;
-    background-attachment: fixed;
+    outline: none;    
+    text-indent: 1em;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
+    font-size: 1.4rem;
 }
 input::placeholder{
-    color: hsla(0, 0, 0, 20);
-    text-indent: 2em;
+    
+    text-indent: 1em;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.right-card-btn > input{
+.right-card-btn >a> input{
     background-color: #fff;
     width: 150px;
     height: 50px;
@@ -113,9 +111,11 @@ input::-webkit-inner-spin-button {
     font-size: 1em;
     margin-top: 20px;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
+    color: #1d4b0f;
 
 }
-.right-card-btn > input:hover{
+.right-card-btn > a>input:hover{
     cursor: pointer;
     background-color: #78DF5A;
+    color: #133309;
 }
