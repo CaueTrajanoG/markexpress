@@ -304,26 +304,26 @@ footer {
     }    
     .slider{
         scale: .8;
-      } 
-      .top-left-btn-back > a>input{
+    } 
+    .top-left-btn-back > a>input{
           margin: 0em .3em;         
-      }
-      .top-menu{
+    }
+    .top-menu{
         display: flex;
         align-items: center;
-      }
-      .banner #logo{
+    }
+    .banner #logo{
         font-size: 4rem;
-      }
-      .banner #icone{
+    }
+    .banner #icone{
         margin-left: 1rem;
-      }   
-      .mapa{
+    }   
+    .mapa{
         scale: .8;
-      } 
-      .about p{
+    } 
+    .about p{
         font-size: .8rem;
-      }
+    }
 
 }
 @media (min-width: 320px) and (max-width: 767px){
@@ -365,13 +365,15 @@ footer {
         height: 600px;
         margin-top: 2em;  
         
-    }   
-
-    .top-left-btn-back > a>input{
-       
-        width: 19.2rem;   
-        margin-top: .5rem;
-          
+    }
+    .top-left-btn-back{       
+         margin: 1rem 1rem;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;  
+    }  
+    .top-left-btn-back a{
+        margin-top: .8rem;
     }
     .top-right-text{
        
