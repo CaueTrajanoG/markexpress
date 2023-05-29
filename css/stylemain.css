@@ -400,6 +400,9 @@ footer {
     .mapa{
        scale: .47;   
     }
+    .banner #logo p{
+        display: none;
+     }
 }
 .background-demo1 {
 	/* Add dimentions to span */
