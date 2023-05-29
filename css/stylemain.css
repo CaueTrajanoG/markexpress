@@ -1,3 +1,7 @@
+@font-face {
+    font-family: mark;
+    src: url('../fonts/Marck_Script/MarckScript-Regular.ttf');
+ }
 *{
     margin: 0;
     padding: 0;      
@@ -9,7 +13,7 @@ body{
     background-color: #78DF5A;
 }
 header{
-    background-color: #2F5E2F;
+    background-color: #3D8F21;
     height: 5.5rem;
     color: white;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
@@ -64,32 +68,124 @@ body{
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    
+    min-height: 100vh;    
 }
 .banner{
     display: flex;
     margin-top: 2rem;
-    background-color: #2f5e2f;
+    background-color: #3D8F21;
     height: 250px;
     box-shadow:  6px 6px 15px -3px rgba(0,0,0,0.44);
 }
 .banner #icone{
-    width: 40%;
+    width: 30%;
     display: flex;
     justify-content: center;    
 }
 .banner #logo{
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: center;
-    font-size: 3.8rem;
-    color: antiquewhite;
+    color: rgb(248, 248, 248);
     align-items: center;
+    font-family: mark;
+    font-size: 5rem; 
 }
 main{
-    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
 }
+/*
+    Slider *****************
+*/
+
+.slider{    
+    margin: 3rem auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;    
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+}
+.manual-navigation{
+        position: absolute;
+        width: 800px;
+        margin: -40px 0px;
+        display: flex;
+        justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.manual-btn:not(:last-child)
+{
+    margin-right: 37px;
+}
+.manual-btn:hover{
+    background-color: #ffffff;
+    transition: 1s;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 1px solid #20a6ff2a;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 35px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+  
+
 /*tabelas*/
 #title-departamentos{
     display: flex;
@@ -115,41 +211,48 @@ main .centralize{
     width: 90%;
     background-color: #fff;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
+    margin-top: 2rem;
+    overflow-y: scroll;    
+   
 }
 
-main .departamento{
-    width: 200px;
+main .departamento{    
     height: 20rem;
-    padding: .1rem 2rem;
-    margin: 2rem;
     flex-wrap: wrap;
-    background-color: #2F5E2F;
-    border-radius: 20px;
-    color: #78DF5A;
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.518);
 }
-main #par{
-    background-color: #78DF5A;
-    color: #2F5E2F;
-}
+
 .departamento img{
-    width: 200px;
+    width: 250px;
+    cursor: pointer;
 }
-.departamento h1{
-    font-size: 3em;
-    margin: 1em 0em;
+.mapa{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;   
 }
-
-
+.mapa div{
+    border: solid 5px #1d4b0f;
+    border-radius: 20px;
+}
+.mapa div iframe{   
+    border-radius: 20px;
+}
 
 /**/
 
 /* footer */
 footer {
-    background-color: #ecece2;
+    padding-top:2rem ;
+    background-color: #2b2b2b;
     flex-grow: 1;
+    margin-top: 2rem;
+    color: #78DF5A;
+    border-top: #3D8F21 solid 4px;
+    margin-top: 2rem;
   }
   
   footer section.social a {
@@ -163,20 +266,13 @@ footer {
     text-align: center;
     height: 250px;
     align-items: baseline;
-  }
-  footer #section-lista{
-    margin-left: 1rem;
-  }
-  
+  }  
   footer .social ul{
     list-style: none;
-    display: flex;    
+    display: flex;  
   }
 
-  footer .social li{
-    border-style: solid;
-    border-color: #777;
-    border-radius: 50%;
+  footer .social li{     
     padding: .5rem;
     margin: 3rem 1rem;
   }
@@ -186,70 +282,147 @@ footer {
   }
 
 
-  footer section.copyright {
-    color: #555;
-    background-color: #c7c7af;
-    text-align: center;
-  }
-  
-  footer section.copyright i.fa-heart {
-    color: #f00;
-  }
-    
 
 
 
 
-
-  @media (max-width: 1500px){
+@media (max-width: 1500px){
     main .details-services{
         grid-template-columns: repeat(4, 1fr);
     }    
-    .banner #logo{
-        font-size: 2.5rem;
-    }
+    
 
 }
 @media (max-width: 1366px){
     main .details-services{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .banner #logo{
-        font-size: 2.5rem;
-    }
+        grid-template-columns: repeat(3, 2fr);
+    }    
 }
 @media (max-width: 768px){
     main .details-services{
         grid-template-columns: repeat(2, 1fr);
     }    
-    .banner #logo{
-        font-size: 2rem;
-    }   
-    
+    .slider{
+        scale: .8;
+      } 
+      .top-left-btn-back > a>input{
+          margin: 0em .3em;         
+      }
+      .top-menu{
+        display: flex;
+        align-items: center;
+      }
+      .banner #logo{
+        font-size: 4rem;
+      }
+      .banner #icone{
+        margin-left: 1rem;
+      }   
+      .mapa{
+        scale: .8;
+      } 
+      .about p{
+        font-size: .8rem;
+      }
 
 }
 @media (min-width: 320px) and (max-width: 767px){
+    *{
+        margin: 0;
+        padding: 0;
+    }    
     main .details-services{
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1.5rem;
         overflow-x: scroll;
+        height: 830px;        
+        width: 300px;
     }
     .banner #icone{
         display: none;
     }
-    .banner #logo{
-        font-size: 2rem;
-        text-indent: 10rem;
+    .slider{
+        display: none;
     }
+    .banner #logo{
+        
+        font-size: 2.4rem;       
+        margin: 0 auto;
+    }    
     header{
         height: 15rem;
-        justify-content: center;        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
     }
     .top-menu{
-        flex-direction: column;        
+        flex-direction: column;   
+        
     }
     footer .tabela-footer{
         flex-direction: column;
         height: 600px;
         margin-top: 2em;  
-      }    
+        
+    }   
+
+    .top-left-btn-back > a>input{
+       
+        width: 19.2rem;   
+        margin-top: .5rem;
+          
+    }
+    .top-right-text{
+       
+        width: 18rem;
+    }
+    #title-departamentos{
+        scale: .9;        
+    }
+    
+    .tabela-footer .endereço, .social , .about{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .social ul{             
+        margin: 0 auto;
+    }
+    .mapa{
+       scale: .47;   
+    }
+}
+.background-demo1 {
+	/* Add dimentions to span */
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	/* Add background image */
+	background-image: url('https://api.iconify.design/mingcute/facebook-line.svg?color=white');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    cursor: pointer;
+
+}
+.background-demo2 {
+	/* Add dimentions to span */
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	/* Add background image */
+	background-image: url('https://api.iconify.design/mdi/linkedin.svg?color=white');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    cursor: pointer;
+}
+.background-demo3 {
+	/* Add dimentions to span */
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	/* Add background image */
+	background-image: url('https://api.iconify.design/mdi/twitter.svg?color=white');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    cursor: pointer;
 }
