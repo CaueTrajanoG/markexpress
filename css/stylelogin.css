@@ -1,0 +1,102 @@
+@font-face {
+    font-family: mark;
+    src: url('../fonts/Marck_Script/MarckScript-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;      
+}
+body {
+    background-color: #78DF5A;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F5E2F;
+    height: 15vh;
+    font-size: 1.8rem;
+}
+header > .top-menu>a {
+    text-decoration: none;
+    color: white;
+}
+header > .top-menu>a >h1:hover{
+    color: #78DF5A;
+}
+header > .top-menu>a:visited{
+    text-decoration: none;
+    color: white;
+}
+section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.right-card{
+    margin-top: 100px;
+    width: 90%;
+    border-radius: 15px;
+    height: 60vh;
+    background-color: #2F5E2F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.right-card-top-text{
+    padding: 30px;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.right-card-info{
+    margin: 5px
+}
+.right-card-info > input {
+    border-radius: 20px;
+    margin: 7.5px;
+    height: 4vh;
+    width: 60vw;
+    border: none;
+    outline: none;    
+    text-indent: 1em;
+    box-shadow:  1px 2px 13px -3px rgba(0,0,0,0.44);
+}
+.right-card-btn > a > input{
+    border-radius: 20px;
+    height: 5.5vh;
+    width: 60vw;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+}
+.right-card-btn > a>input:hover{
+    background-color: #78DF5A;
+    color: #2F5E2F;
+}
+.right-card-checkbox {
+    width: 58vw;
+}
+.right-card-conected {
+    padding-left: 0.5rem;
+    color: white;
+}
+.right-card-mpw {
+    width: 58vw;
+    margin-top: 0.51rem;
+    margin-bottom: 65px;
+}
+.right-card-mpw > p {
+    color: white;
+}
+.right-card-mpw > p > span {
+    color: #78DF5A;
+}
+
+
