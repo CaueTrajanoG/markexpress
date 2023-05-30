@@ -6,11 +6,8 @@
     margin: 0;
     padding: 0;      
 }
-:root{
-    --greendark:var(--#2F5E2F);
-}
 body{
-    background-color: #3D8F21;
+    background-color: #9beb82ce;
 }
 header{
     background-color: #2F5E2F;
@@ -88,7 +85,7 @@ section{
 }
 .right-card{
     border-radius: 0 1.8rem 1.8rem 0;
-    background-color: white;
+    background-color: #2F5E2F;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,16 +93,19 @@ section{
     justify-content: center;
 }
 .right-card-top-text{
-    color: #2F5E2F;
+    color: white;
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: 1.8rem;
 }
+.right-card-top-text > span{
+    color: #78DF5A;
+}
 .right-card-info > input{
     width: 21.9rem;
     height: 2.5rem;
-    color:white;
-    background: #1d4b0f;
+    color:#1d4b0f;
+    background: white;
     margin: .8rem;
     border-radius: 20px;
     border: none;
@@ -115,13 +115,11 @@ section{
     font-size: 1rem;
 }
 input::placeholder{
-    color:white;
+    color:#1d4b0f;
     text-indent: 1em;
 }
 
 .right-card-btn >a> input{
-    color:white;
-    background-color: #1d4b0f;
     width: 9.3rem;
     height: 3.1rem;
     border-radius: 20px;
@@ -136,7 +134,8 @@ input::placeholder{
 .right-card-btn > a>input:hover{
     cursor: pointer;
     background-color: #78DF5A;
-    color: #133309;
+    color: #2F5E2F;
+
 }
 
 @media (max-width: 768px) {
@@ -188,7 +187,13 @@ input::placeholder{
 
 @media (max-width: 480px) {
     main {
-        background-image: linear-gradient(to top, #78DF5A 65%, white);
+        background-color: #9beb82ce;
+    }
+    .right-card{
+        border-radius: 20px;
+    }
+    .right-card-top-text{
+        text-align: center;
     }
     .top-left-btn-back{
         display: none;
