@@ -8,7 +8,11 @@
 }
 body {
     background-color: #9beb82ce;
-
+    background-image: linear-gradient(#54eb5480, #4ae91a80) , url('../img/Background_Abstract.jpg');   
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
 }
 
 header{
@@ -16,7 +20,7 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #2F5E2F;
-    height: 15vh;
+    height: 8vh;
     font-size: 2rem;
     font-family: mark;
 }
@@ -38,14 +42,13 @@ section{
     justify-content:center;
     align-items: center;
 }
-.left-card{
-    display: none;
-    font-family: mark;
-    font-size: 3rem;
+.left-card img{   
+    width: 410px;
+    padding: 0rem;    
+    border-radius: 10px;
 }
 .right-card{
-    margin-top: 100px;;
-    border-radius: 15px;
+    margin-top: 100px;;    
     width: 90vw;
     height: 60vh;
     background-color: #2F5E2F;
@@ -62,7 +65,9 @@ section{
     font-family: mark;
 }
 .right-card-info{
-    margin: 5px
+    margin: 10px;
+    padding-bottom: 2rem;
+
 }
 .right-card-info > input {
     border-radius: 20px;
@@ -76,7 +81,7 @@ section{
 }
 .right-card-btn > a > input{
     border-radius: 20px;
-    height: 5.5vh;
+    height: 4.5vh;
     width: 60vw;
     border: none;
     outline: none;
@@ -111,17 +116,65 @@ section{
     color: #78DF5A;
     cursor: pointer;
 }
-@media (min-width:768px){
+
+
+@media (min-width:769px){
     .left-card{
-        display: flex;
-        margin-top: 100px;;
-        border-radius: 15px 0 0 15px;
+        margin-top: 100px;;        
+        width: 50vw;
+        height: 60vh;
+        background-color: #2F5E2F;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    .left-card-text{        
+        font-size: 2.8rem;
+        color: white;
+        text-align: center;
+        font-weight: 600;
+    }
+    .left-card-text img{  
+        margin: 6rem 5rem;
+    }
+    .left-card-text > span {
+        color: #78DF5A;
+    }
+    .right-card{        
+        width: 35vw;
+        
+    }
+    .right-card-info > input {
+        width: 30vw;
+    }
+    .right-card-btn >a > input{
+        width: 15vw;
+        font-size: 1rem;
+    }
+    .right-card-checkbox{
+        width: 27.5vw;
+    }
+    .right-card-mpw{
+        width: 27.5vw;
+    }
+    .right-card-top-text{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+}
+
+
+@media (min-width:768px) and (max-width:768px){
+    .left-card{       
+        margin-top: 100px;;        
         width: 30vw;
         height: 60vh;
         background-color: #2F5E2F;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        display: none;
     }
     .left-card-text{
         font-size: 2.8rem;
@@ -133,14 +186,15 @@ section{
         color: #78DF5A;
     }
     .right-card{
-        border-radius: 0 15px 15px 0;
-        width: 35vw;
+        border-radius: 0;
+        width: 55vw;        
     }
     .right-card-info > input {
         width: 30vw;
     }
     .right-card-btn >a > input{
-        width: 30vw;
+        width: 15vw;
+        font-size: 1rem;
     }
     .right-card-checkbox{
         width: 27.5vw;
@@ -150,6 +204,18 @@ section{
     }
     .right-card-top-text{
         font-size: 2.4rem;
+        text-align: center;
     }
 
+}
+@media (min-width:320px) and (max-width:767px){
+    .left-card{
+        display: none;
+    }
+    .top-menu a{
+        font-size: 1.5rem;
+    }
+    .right-card-top-text{
+        text-align: center;
+    }
 }

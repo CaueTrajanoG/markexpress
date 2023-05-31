@@ -7,7 +7,10 @@
     padding: 0;      
 }
 body{
-    background-color: #9beb82ce;
+    background-image: linear-gradient(#54eb5480, #4ae91a80) , url('../img/Background_Abstract.jpg');   
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 header{
     background-color: #2F5E2F;
