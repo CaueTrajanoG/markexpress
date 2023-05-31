@@ -17,7 +17,8 @@ header{
     align-items: center;
     background-color: #2F5E2F;
     height: 15vh;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-family: mark;
 }
 header > .top-menu>a {
     text-decoration: none;
@@ -39,6 +40,8 @@ section{
 }
 .left-card{
     display: none;
+    font-family: mark;
+    font-size: 3rem;
 }
 .right-card{
     margin-top: 100px;;
@@ -54,9 +57,9 @@ section{
 .right-card-top-text{
     padding: 30px;
     color: white;
-    font-size: 1.5rem;
-    margin-top: 35px;
-    margin-bottom: 50px;
+    font-size: 1.8rem;
+    margin-top: 35px;    
+    font-family: mark;
 }
 .right-card-info{
     margin: 5px
@@ -123,7 +126,7 @@ section{
     .left-card-text{
         font-size: 2.8rem;
         color: white;
-
+        text-align: center;
         font-weight: 600;
     }
     .left-card-text > span {
