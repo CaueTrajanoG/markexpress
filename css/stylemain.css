@@ -24,14 +24,14 @@ header{
     color: white;
     box-shadow:  1px 2px 23px -3px rgba(0,0,0,0.44);
 }
-.top-menu{
-    /* display: flex; */
-    /* justify-content: space-between;  */
-}
+/* .top-menu{
+    display: flex; 
+    justify-content: space-between;  
+} */
 .top-left-btn-back > a>input{
-    margin-left: 15px;
-    background-color: #fff;
-    width: 7rem;
+    /* margin-left: 15px; */
+    /* background-color: #fff; */
+    /* width: 7rem;
     height: 2rem;
     border-radius: 20px;
     border: none;
@@ -40,7 +40,7 @@ header{
     margin-top: 1.5rem;
     box-shadow:  1px 2px 5px -3px rgba(0,0,0,0.44);
     color: #2F5E2F;
-    font-weight: 700;    
+    font-weight: 700;     */
 }
 .top-left-btn-back > a>input:hover   {
         cursor: pointer;
