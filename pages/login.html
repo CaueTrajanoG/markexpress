@@ -7,31 +7,33 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Login</title>
 </head>
-<body class="bg-[linear-gradient(#54eb5480,#4ae91a80),url('../img/Background\_Abstract.jpg')] bg-center bg-cover h-screen;">
-    <header class="flex justify-center items-center bg-[#2F5E2F] h-[8vh] text-[2rem];
-    font-family: mark;">
-        <div class="top-menu">
-                <a href="index.html" class="no-underline text-[white] hover:text-[#78DF5A] visited:no-underline text-[white]">
-                    <h1 class="text-[2.6rem]">MarkExpress</h1>
+<body class="bg-[linear-gradient(#54eb5480,#54eb5480),url('../img/Background\_Abstract.jpg')] bg-center bg-cover h-screen;">
+    <header class="bg-[#2F5E2F] h-[5.5rem] text-[white] shadow-[1px_2px_10px_-3px_rgba(0,0,0,0.44)]">
+        <div class="top-menu flex justify-center items-center;">
+            <div class="top-right-text">
+                <a href="index.html" class=" text-white no-underline visited:text-white visited:no-underline;">
+                    <h1 class=" text-5xl hover:text-[#78DF5A] no-underline pt-6 ">MarkExpress</h1>
                 </a>
+            </div>
         </div>
-    </header>
+</header>
     <main>
         <section class="flex justify-center items-center">
-            <div class="right-card w-[45vw] h-[60vh] bg-[#2F5E2F] flex flex-col justify-start items-center mt-[100px] rounded-[30px]">
-                <div class="right-card-top-text text-white text-[2.2rem] mt-[35px] mb-10 p-[30px]">
-                    <h3>Bem-vindo de volta!</h3>
+            <div class="right-card w-[45vw] h-[60vh] bg-[#2F5E2F] flex flex-col justify-start items-center mt-[100px] rounded-[30px] gap-6">
+                <div class="text-[white] font-bold text-5xl mb-[1.8rem] mt-[4rem]">
+                    <h3>Bem-vindo de <span class="text-[#78DF5A]
+                        ">volta!</span></h3>
                 </div>
-                <div class="right-card-info mb-7 h-[3rem]">
+                <div class="right-card-info  h-[3rem]">
                     <input type="text" placeholder="Email" class="h-10 w-80 indent-[1em] shadow-[1px 2px 13px -3px rgba(0,0,0,0.44)] rounded-[20px] border-none outline-none">
                 </div>
-                <div class="right-card-info mb-5 h-[3rem] ">
+                <div class="right-card-info  h-[3rem] ">
                     <input type="password" name="txtpw" id="txtpw" placeholder="Senha" class="h-10 w-80 indent-[1em] shadow-[1px 2px 13px -3px rgba(0,0,0,0.44)]  rounded-[20px] border-none outline-none">
                 </div>
                 <div class="right-card-checkbox  hover:cursor-pointer">
                     <input type="checkbox" name="loged" id="loged" class="hover:cursor-pointer mr-2"><span class="right-card-connected text-white pl-2">Manter conectado.</span>
                 </div>
-                <div class="right-card-mpw mt-[0.51rem] mb-[4vh]">
+                <div class="right-card-mpw ">
                     <p class="text-white">Esqueceu sua senha? <span class="text-[#78DF5A] cursor-pointer">Redefina.</span></p>
                 </div>
                 <div class="right-card-btn">
