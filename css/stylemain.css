@@ -406,6 +406,31 @@
   } */
   
   
+  #link-zap{
+    text-decoration: none;         
+    position: fixed;
+    right: 40px;
+    bottom: 30px;      
+}
+#link-zap button{  
+  width: 60px;
+  height: 60px;  
+  border-radius: 50%;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/124/124034.png?w=360);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+}
+#link-zap button:hover{
+  transition: 1s;
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+
+
+
   /*---------------------------------------------------*/
   
   /* 
