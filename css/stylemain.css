@@ -242,7 +242,7 @@
     height: 800px;
   } */
   
-  /* .details-services {
+  .details-services {
     width: 90%;
     background-color: #1d4b0f;
     display: grid;
@@ -257,7 +257,7 @@
     box-shadow: 2px 5px 20px gray;
   
   }
-   */
+   
   /* main .departamento {
     height: 20rem;
     flex-wrap: wrap;
@@ -417,23 +417,23 @@
   
   }
   
-  /*
+  */
   @media (max-width: 1366px) {
     main .details-services {
-      /* grid-template-columns: repeat(3, 2fr); */
-  /* overflow-y: scroll; 
+      grid-template-columns: repeat(3, 2fr); 
+      overflow-y: scroll; 
   }
   }
-  
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     main .details-services {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
   
     .slider {
       scale: .8;
     }
-  
+  /*
     .top-left-btn-back>a>input {
       margin: 0em .3em;
     }
@@ -460,27 +460,32 @@
     }
   
   }
-  
+  */
   @media (min-width: 320px) and (max-width: 767px) {
+    /*
     * {
       margin: 0;
       padding: 0;
     }
-  
+  */
     main .details-services {
       grid-template-columns: repeat(1, 1fr);
       row-gap: 1.5rem;
       width: 280px;
     }
-  
+  /*
     .banner #icone {
       display: none;
     }
-  
+  */
     .slider {
       display: none;
     }
-  
+    .mapa {
+      scale: .47;
+    }
+  }
+  /*
     .banner #logo {
       font-size: 2.4rem;
       margin: 0 auto;
@@ -535,9 +540,7 @@
       margin: 0 auto;
     }
   
-    .mapa {
-      scale: .47;
-    }
+    
   
     .banner #logo p {
       display: none;
