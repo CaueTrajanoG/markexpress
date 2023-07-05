@@ -1,177 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/stylemain.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/stylemain.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>MarkExpress</title>
+  <title>MarkExpress</title>
 </head>
-<body>
-    <header>
-        <div class="top-menu flex justify-between">
-            <div class="top-left-btn-back  ml-8 text-black font-semibold bg-white m-6 p-3 rounded-[20px] ">
-                <a href="register.html"><input type="button" value="Cadastro"></a>                
-                <a href="login.html"><input type="button" value="Login"></a>                
-            </div>            
-            <div class="top-right-text">
-                <input type="text" placeholder="Buscar Produtos">
-            </div>
+
+<body class="m-0 p-0 bg-[#9beb82ce] flex  flex-col 
+  bg-[url('../img/Component-18.jpg')] bg-cover ">
+
+
+  <header class="h-30 w-100vh bg-[#2f5e2f] text-[white] shadow-[1px_2px_23px_-3px_rgba(0,0,0,0.44)] 
+      bg-gradient-to-r from-green-500 from-10% via-esmerald-500 via-30% to-emerald-500 to-90%">
+
+
+    <div class="flex justify-between">
+
+      <div class="top-left-btn-back ml-8 text-gray-600 font-semibold m-6 p-3 rounded-[30px] ">
+        <a class="bg-white p-3 rounded-[20px]" href="register.html"><input type="button" value="Cadastro"></a>
+        <a class=" ml-10 bg-white p-3 px-7 rounded-[20px]" href="login.html"><input type="button" value="Login"></a>
+      </div>
+
+      <div class="hidden md:flex text-xl p-6"> <input class="rounded-[20px] pl-4" type="text"
+          placeholder="Buscar Produtos">
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="banner flex mt-7 bg-[#2F5E2F] shadow-[6px_6px_15px_-3px_rgba(0,0,0,0.44)]">
+      <div class="hidden md:flex justify-center scale-75">
+        <img src="../img/freepik--Device--inject-291.png" alt="">
+      </div>
+      <div id="logo" class="m-auto w-[70%] flex justify-center text-white items-center  flex-col">
+        <h1 class="  text-5xl m-2 md:text-8xl ">MarkExpress</h1>
+        <p class="text-2xl md:text-4xl">O seu mercado online...</p>
+      </div>
+    </section>
+
+    <!--Area do slider-->
+
+    <div class="hidden xl:slider w-[800px] h-[400px] overflow-hidden mx-auto my-12">
+      <div class="slides w-[400%] h-[400px] flex">
+        <!--radio buttons-->
+        <input class="hidden" type="radio" name="radio-btn" id="radio1">
+        <input class="hidden" type="radio" name="radio-btn" id="radio2">
+        <input class="hidden" type="radio" name="radio-btn" id="radio3">
+        <input class="hidden" type="radio" name="radio-btn" id="radio4">
+        <!--fim radio-->
+
+
+        <!--imagens-->
+        <div class="slide first w-3/12 relative transition-[3s]">
+          <img src="../img/Component 12.jpg" alt="">
         </div>
-</header>
-
-    <main>
-        <section class="banner">
-            <div id="icone">
-                <img src="../img/freepik--Device--inject-291.png" alt="">                 
-            </div>
-            <div id="logo">
-                <h1>MarkExpress</h1>
-                <p>O seu mercado online...</p>
-            </div>
-        </section>
-
-        <!--Area do slider-->
-                  
-        <div class="slider">
-            <div class="slides">
-                <!--radio buttons-->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!--fim radio-->
-
-
-                <!--imagens-->
-                <div class="slide first">
-                    <img src="../img/Component 12.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../img/Component 13.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../img/Component 14.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../img/Component 16.jpg" alt="">
-                </div>
-                <!--fim slides-->
-
-                <!--navigation auto-->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-            </div>
-
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
+        <div class="slide w-3/12 relative">
+          <img src="../img/Component 13.jpg" alt="">
         </div>
-        
-        
-        <!-- Area das sessões de produtos -->
-        
-        <!-- Title  -->
-        <section id="title-departamentos">
-            <h1>Sessões</h1>            
-        </section>
-        
-        <div class="centralize">
-        
-            <div class="details-services">  
-                
-                <section class="departamento">                    
-                    <img src="../img/frutas.jpg" alt="" class="img-section">                    
-                </section>
-    
-    
-                <section class="departamento">                    
-                    <img src="../img/padaria.jpg" alt=""class="img-section">                    
-                </section>
-    
-    
-                <section class="departamento">                    
-                    <img src="../img/carne.jpg" alt=""class="img-section">                    
-                </section>
-    
-    
-                <section class="departamento">                    
-                    <img src="../img/frios.jpg" alt=""class="img-section">                    
-                </section>
-    
-                <section class="departamento">                    
-                    <img src="../img/limpeza.jpg" alt=""class="img-section">                    
-                </section>
+        <div class="slide w-3/12 relative">
+          <img src="../img/Component 14.jpg" alt="">
+        </div>
+        <div class="slide w-3/12 relative">
+          <img src="../img/Component 16.jpg" alt="">
+        </div>
+        <!--fim slides-->
 
-                <section class="departamento">                    
-                    <img src="../img/perfumaria.jpg" alt=""class="img-section">                    
-                </section>
-            
-                <section class="departamento">                    
-                    <img src="../img/bebidas.jpg" alt=""class="img-section">                    
-                </section>
-    
-                <section class="departamento">                    
-                    <img src="../img/graos.jpg" alt=""class="img-section">                    
-                </section>
-    
+        <!--navigation auto-->
+        <div class="navigation-auto absolute w-[800px] flex justify-center mt-[360px]">
+          <div class="auto-btn1 border cursor-pointer  p-[7px] rounded-[10px] border-solid border-[#20a6ff2a]">
           </div>
-        </div>   
-        <section id="title-mapa">
-            <h1>Como chegar?</h1>
+          <div class="auto-btn2 border cursor-pointer  p-[7px] rounded-[10px] border-solid border-[#20a6ff2a]">
+          </div>
+          <div class="auto-btn3 border cursor-pointer  p-[7px] rounded-[10px] border-solid border-[#20a6ff2a]">
+          </div>
+          <div class="auto-btn4 border cursor-pointer  p-[7px] rounded-[10px] border-solid border-[#20a6ff2a]">
+          </div>
+        </div>
+      </div>
+
+      <div class="manual-navigation absolute w-[800px] flex justify-center mx-0;">
+        <label for="radio1"
+          class="manual-btn cursor-pointer p-[5px] rounded-[10px] border-2 border-solid border-white  mr-[37px]"></label>
+        <label for="radio2"
+          class="manual-btn cursor-pointer p-[5px] rounded-[10px] border-2 border-solid border-white  mr-[37px]"></label>
+        <label for="radio3"
+          class="manual-btn cursor-pointer p-[5px] rounded-[10px] border-2 border-solid border-white  mr-[37px]"></label>
+        <label for="radio4"
+          class="manual-btn cursor-pointer p-[5px] rounded-[10px] border-2 border-solid border-white "></label>
+      </div>
+    </div>
+
+
+    <!-- Area das sessões de produtos -->
+
+    <!-- Title  -->
+    <section id="title-departamentos" class="flex justify-center text-center mt-8">
+      <h1 class="text-[white] bg-[#2f5e2f] w-[300px] text-[2.2rem] p-[0.6rem] rounded-[20px]">Sessões</h1>
+    </section>
+
+    <div class="centralize flex justify-center h-[800px]">
+
+      <div class="details-services flex flex-col  overflow-auto xl:w-[90%] bg-[#1d4b0f]  text-center shadow-[2px_5px_20px_gray] mt-8 p-4 rounded-[20px];
+  background: rgb(47, 94, 47);
+  
+              bg-gradient-to-r from-green-500 from-10% via-esmerald-400 via-30% to-emerald-500 to-90% ...
+        lg: grid-cols-3
+        2lx: grid-cols-4  ">
+
+        <section class="departamento h-80 flex-wrap mt-10">
+          <img src="../img/frutas.jpg" alt=""
+            class="img-section w-[250px] cursor-pointer shadow-[1px_1px_20px_rgb(46,45,45)] rounded-[10px]">
         </section>
-        <section class="mapa">          
 
-           <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7293198428088!2d-34.87468668320773!3d-7.135564298408538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1685342086164!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>
+
+        <section class="departamento h-80 flex-wrap mt-10">
+          <img src="../img/padaria.jpg" alt=""
+            class="img-section w-[250px] cursor-pointer shadow-[1px_1px_20px_rgb(46,45,45)] rounded-[10px]">
         </section>
-    </main>
 
-    
-        <!-- Footer -->
-    <footer>     
-            <div class="tabela-footer">      
-                <section class="endereço">
-                    <h1>LOCAL</h1>
-                    <p>Rua 1º de maio,720 <br>
-                    jaguaribe, João Pessoa</p>
-                </section>
-                
-                <section class="social" id="section-lista">
-                    <h1>NOSSAS REDES</h1>
-                    <ul>
-                    <li>
-                        <span class="background-demo1"></span>      
-                    </li>
-                    <li>
-                        <span class="background-demo2"></span>      
-                    </li>
-                    <li>
-                        <span class="background-demo3"></span>      
-                    </li>                    
-                    </ul>
-                </section>
-                
-                <section class="about">
-                    <h1>Sobre nós</h1>
-                    <p>A rede MarkExpress busca <br> proporcionar
-                        a melhor <br> experiência possivel.<br> Com a gente
-                        <br>suas compras vão até você.</p>
-                   
-                </section>
-            </div>
 
-    </footer>
-    <script src="../scripts/script.js"></script>
+        <section class="departamento h-80 flex-wrap mt-10">
+          <img src="../img/carne.jpg" alt=""
+            class="img-section w-[250px] cursor-pointer shadow-[1px_1px_20px_rgb(46,45,45)] rounded-[10px]">
+        </section>
+
+
+        <section class="departamento h-80 flex-wrap mt-10">
+          <img src="../img/frios.jpg" alt=""
+            class="img-section w-[250px] cursor-pointer shadow-[1px_1px_20px_rgb(46,45,45)] rounded-[10px]">
+        </section>
+
+        <section class="departamento h-80 flex-wrap mt-10">
+          <img src="../img/limpeza.jpg" alt=""
+            class="img-section w-[250px] cursor-pointer shadow-[1px_1px_20px_rgb(46,45,45)] rounded-[10px]">
+        </section>
+
+        <section class="departamento h-80 flex-wrap mt-10">
+          <img src="../img/perfumaria.jpg" alt=""
+            class="img-section w-[250px] cursor-pointer shadow-[1px_1px_20px_rgb(46,45,45)] rounded-[10px]">
+        </section>
+
+        <section class="departamento h-80 flex-wrap mt-10">
+          <img src="../img/bebidas.jpg" alt=""
+            class="img-section w-[250px] cursor-pointer shadow-[1px_1px_20px_rgb(46,45,45)] rounded-[10px]">
+        </section>
+
+        <section class="departamento h-80 flex-wrap mt-10">
+          <img src="../img/graos.jpg" alt=""
+            class="img-section w-[250px] cursor-pointer shadow-[1px_1px_20px_rgb(46,45,45)] rounded-[10px]">
+        </section>
+
+      </div>
+    </div>
+    <section id="title-mapa" class=" flex justify-center text-center m-260 pt-10;">
+      <h1 class="
+        text-[white]        
+        w-[270px]
+        text-[2.3rem]
+        p-[0.8rem]
+        rounded-[10px]   
+        
+        ">Como chegar?</h1>
+    </section>
+    <section class="mapa flex justify-center flex-col items-center scale-50">
+
+      <div class="shadow-[3px_8px_16px_rgb(110,110,110)] rounded-[20px] mt-100">
+        <iframe class="rounded-[10px]"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7293198428088!2d-34.87468668320773!3d-7.135564298408538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1685342086164!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-[#2b2b2b] grow text-[white] mt-8 pt-8 border-t-[#3D8F21] border-t-[4px] border-solid">
+
+    <div class="tabela-footer flex flex-col justify-around text-center h-[250px] items-baseline">
+      <section class="m-auto endereço">
+        <h1>LOCAL</h1>
+        <p>Rua 1º de maio,720 <br>
+          jaguaribe, João Pessoa</p>
+      </section>
+
+      <section class="social m-auto" id="section-lista">
+        <h1>NOSSAS REDES</h1>
+        <ul class="list-style: none flex">
+          <li class="mx-4 my-8 p-2 hover:transition-[0.3s] hover:cursor-pointer scale: 2">
+            <span
+              class="background-demo1 bg-no-repeat inline-block w-[30px] h-[30px] bg-cover cursor-pointer bg-[url('https://api.iconify.design/mingcute/facebook-line.svg?color=white')] "></span>
+          </li>
+          <li class="mx-4 my-8 p-2 hover:transition-[0.3s] hover:cursor-pointer scale: 2">
+            <span
+              class="background-demo2 background-demo1 bg-no-repeat inline-block w-[30px] h-[30px] bg-cover cursor-pointer bg-[url('https://api.iconify.design/mdi/linkedin.svg?color=white')]"></span>
+          </li>
+          <li class="mx-4 my-8 p-2 hover:transition-[0.3s] hover:cursor-pointer scale: 2">
+            <span
+              class="background-demo3 background-demo1 bg-no-repeat inline-block w-[30px] h-[30px] bg-cover cursor-pointer bg-[url('https://api.iconify.design/mdi/twitter.svg?color=white')]"></span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="hidden about">
+        <h1>Sobre nós</h1>
+        <p class="text-[1.2rem] mt-16 mb-12;">A rede MarkExpress busca <br> proporcionar
+          a melhor <br> experiência possivel.<br> Com a gente
+          <br>suas compras vão até você.
+        </p>
+
+      </section>
+    </div>
+
+  </footer>
+  <script src="../scripts/script.js"></script>
 </body>
+
 </html>
