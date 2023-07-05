@@ -12,7 +12,7 @@
             <div class="top-menu flex justify-center items-center;">
                 <div class="top-right-text">
                     <a href="index.html" class=" text-white no-underline visited:text-white visited:no-underline;">
-                        <h1 class=" text-5xl hover:text-[#78DF5A] no-underline pt-6 ">MarkExpress</h1>
+                        <h1 class=" text-4xl sm:text-5xl hover:text-[#78DF5A] font-bold no-underline pt-6 ">MarkExpress</h1>
                     </a>
                 </div>
             </div>
@@ -24,29 +24,42 @@
                     <img src="../img/ecom-ani.gif" class="rounded-l-[30px] w-[30vw]">
                 </div>
             </div>
-            <div class="right-card flex flex-col items-center lg:w-[30vw] justify-center lg:rounded-r-[30px] rounded-[30px] bg-[#2F5E2F] gap-6">
-                    <div class="right-card-top-text text-[white] font-bold text-4xl lg:text-5xl mb-[1.8rem] mt-4 ml-4 mr-4">Faça seu <span class="text-[#78DF5A]
+            <div class="right-card flex flex-col items-center w-[100vw] sm:w-[65vw] xl:w-[45vw] justify-center lg:rounded-r-[30px] rounded-[30px] bg-[#2F5E2F] gap-6 position: static">
+                    <div class="right-card-top-text text-[white] font-bold mt-[4rem] text-3xl sm:text-5xl mb-[1.8rem] mt-4 mr-2 ml-2">Faça seu <span class="text-[#78DF5A]
                     ">cadastro</span></div>
-                    <div class="right-card-info">
-                        <input type="text" placeholder="Nome" class="h-10 w-72 lg:w-80 indent-[1em] shadow-[1px 2px 13px -3px rgba(0,0,0,0.44)] rounded-[20px] border-none outline-none">
-                    </div>
-                    <div class="right-card-info">
-                        <input type="text" placeholder="Email"class="h-10  w-72 lg:w-80 indent-[1em] shadow-[1px 2px 13px -3px rgba(0,0,0,0.44)] rounded-[20px] border-none outline-none">
-                    </div>
-                        
-                    <div class="right-card-info">
-                        <input type="password" placeholder="Senha"class="h-10 w-72 lg:w-80 indent-[1em] shadow-[1px 2px 13px -3px rgba(0,0,0,0.44)] rounded-[20px] border-none outline-none">
-                    </div>
-                    <div class="right-card-info">
-                        <input type="text" placeholder="Endereço"class="h-10 w-72 lg:w-80 indent-[1em] shadow-[1px 2px 13px -3px rgba(0,0,0,0.44)] rounded-[20px] border-none outline-none">
-                    </div>
-                    <div class="right-card-info">
-                        <input type="number" name="cpftxt" id="cpftxt" placeholder="CPF"class="h-10 w-72 lg:w-80 indent-[1em] shadow-[1px 2px 13px -3px rgba(0,0,0,0.44)] rounded-[20px] border-none outline-none">
-                    </div>
-                    <div class="right-card-btn">
-                        <a href="index.html">
-                            <input class="w-[9.3rem] h-[3.1rem] mb-8 text-[#2F5E2F] font-semibold text-base shadow-[1px_2px_23px_-3px_rgba(0,0,0,0.44)] mt-5 rounded-[20px] hover:bg-[#81f55e] hover:text-[#2F5E2F] hover:cursor-pointer outline-none bg-[#78DF5A]"type="button" value="CONFIRMAR">
-                        </a>
+                    <div class="w-full max-w-xs">
+                        <form  action="exemplo.php" method="post" class="bg-[#B8E0AA] shadow-md rounded-[30px] px-8 pt-6 pb-8 mb-4">
+                        <div class="mb-4">
+                            <label class="block text-[#2F5E2F] font-bold mb-2" for="name">
+                            Nome
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Nome da Silva" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-[#2F5E2F] font-bold mb-2" for="senha">
+                            Senha
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="123abc">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-[#2F5E2F] font-bold mb-2" for="mail">
+                            Email
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="mail" type="text" placeholder="example@ifpb">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-[#2F5E2F] font-bold mb-2" for="cpf">
+                            CPF
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cpf" type="text" placeholder="123.456.789-10">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <input class="bg-[#2F5E2F] hover:bg-[#78DF5A] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Sign in">
+                            <a class="inline-block align-baseline font-bold text-sm text-[#2F5E2F] hover:text-[#78DF5A]" href="#">
+                            Esqueceu a senha?
+                            </a>
+                        </div>
+                        </form>
                     </div>
             </div>
         </section>
